@@ -24,7 +24,7 @@ const AddTrip = () => {
       )}
       {open ? (
         <div className="addtrip-content">
-          <TripForm />
+          <TripForm close={handleOpen} />
         </div>
       ) : null}
     </div>

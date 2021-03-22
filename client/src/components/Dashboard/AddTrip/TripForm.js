@@ -10,7 +10,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 import "./css/TripForm.css";
 
-const TripForm = () => {
+const TripForm = ({ close }) => {
   const initial_state = {
     coord_destination: {},
     coord_leaving: {},
@@ -233,6 +233,7 @@ const TripForm = () => {
       let trip = { ...data, duration };
 
       dispatch(addTripToAPI(trip));
+      close();
     }
   };
 
