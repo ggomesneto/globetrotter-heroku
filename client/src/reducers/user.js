@@ -1,4 +1,10 @@
-import { FETCH_USER, PATCH_USER, FAIL_REG, FAIL_LOG } from "../actions/types";
+import {
+  FETCH_USER,
+  PATCH_USER,
+  FAIL_REG,
+  FAIL_LOG,
+  ADD_INFO,
+} from "../actions/types";
 
 export default function userReduction(
   state = { failReg: false, failLog: false },
@@ -11,9 +17,10 @@ export default function userReduction(
       return { ...state, failReg: true };
     case FAIL_LOG:
       return { ...state, failLog: true };
-    case PATCH_USER: {
+    case PATCH_USER:
       return { ...state, user: action.user };
-    }
+    case ADD_INFO:
+      return { ...state, user: action.user };
     default:
       return { ...state };
   }

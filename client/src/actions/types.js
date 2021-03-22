@@ -7,3 +7,4 @@ export const FETCH_TRIPS = "FETCH_TRIPS";
 export const PATCH_TRIP = "PATCH_TRIP";
 export const DEL_TRIP = "DEL_TRIP";
 export const ADD_TRIP = "ADD_TRIP";
+export const ADD_INFO = "ADD_INFO";

@@ -1,6 +1,12 @@
 import axios from "axios";
 
-import { FETCH_USER, PATCH_USER, FAIL_REG, FAIL_LOG } from "../actions/types";
+import {
+  FETCH_USER,
+  PATCH_USER,
+  FAIL_REG,
+  FAIL_LOG,
+  ADD_INFO,
+} from "../actions/types";
 
 const API_URL = process.env.REACT_APP_API_URL || "/api/users";
 
@@ -88,6 +94,26 @@ export function patchUserOnAPI(user) {
 function editUser(user) {
   return {
     type: PATCH_USER,
+    user,
+  };
+}
+
+export function getUserInfoFromAPI(token, email) {
+  let config = {
+    headers: {
+      token,
+    },
+  };
+
+  return async function (dispatch) {
+    const response = await axios.get(`${API_URL}/${email}`, config);
+    dispatch(addUserInfo(response.data.user));
+  };
+}
+
+function addUserInfo(user) {
+  return {
+    type: ADD_INFO,
     user,
   };
 }

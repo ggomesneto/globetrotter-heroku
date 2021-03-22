@@ -82,15 +82,11 @@ router.patch("/:id", async function (req, res, next) {
   }
 });
 
-router.get("/:username", ensureLoggedIn, async function (req, res, next) {
+router.get("/:email", ensureLoggedIn, async function (req, res, next) {
   try {
-    let username = req.params.username;
+    let email = req.params.email;
 
-    const user = await User.get(username);
-
-    const created = await user.trips();
-
-    user.created = created;
+    const user = await User.get(email);
 
     return res.json({ user });
   } catch (e) {

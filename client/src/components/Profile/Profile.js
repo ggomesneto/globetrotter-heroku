@@ -6,7 +6,23 @@ import { patchUserOnAPI } from "../../actions/user";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 
+import { getUserInfoFromAPI } from "../../actions/user";
+
 const Profile = () => {
+  const token = window.sessionStorage.getItem("token");
+  const email = window.sessionStorage.getItem("email");
+
+  const dispatch = useDispatch();
+  const history = useHistory();
+
+  useEffect(() => {
+    if (token) {
+      dispatch(getUserInfoFromAPI(token, email));
+    } else {
+      history.push("/login");
+    }
+  }, []);
+
   const initial_state = {
     name: "",
     living: "",
@@ -18,15 +34,7 @@ const Profile = () => {
   const [errors, setErrors] = useState(initial_errors);
   const [showErrors, setShowErrors] = useState(false);
 
-  const dispatch = useDispatch();
-  const history = useHistory();
-
   const user = useSelector((state) => state.user.user);
-  console.log(user);
-
-  if (!user) {
-    history.push("/login");
-  }
 
   useEffect(() => {
     if (user) {
@@ -73,6 +81,10 @@ const Profile = () => {
       history.push("/dashboard");
     }
   };
+
+  if (!user) {
+    return <div className="redirect">Loading</div>;
+  }
 
   return (
     <div className="profile-wrapper">

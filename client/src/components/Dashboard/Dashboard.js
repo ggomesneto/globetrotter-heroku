@@ -7,6 +7,7 @@ import AddTrip from "./AddTrip/AddTrip";
 import Trip from "./Trip/Trip";
 
 import { getTripsFromAPI } from "../../actions/trip";
+import { getUserInfoFromAPI } from "../../actions/user";
 
 import { useSelector, useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
@@ -15,10 +16,21 @@ import "./css/Dashboard.css";
 const { v4: uuidv4 } = require("uuid");
 
 const Dashboard = () => {
+  const token = window.sessionStorage.getItem("token");
+  const email = window.sessionStorage.getItem("email");
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    if (token) {
+      dispatch(getUserInfoFromAPI(token, email));
+    }
+  }, []);
+
   const user = useSelector((state) => state.user.user);
   const trips = useSelector((state) => state.trips.trips);
   const history = useHistory();
-  const dispatch = useDispatch();
+
   const [selected, setSelected] = useState({});
 
   useEffect(() => {

@@ -9,6 +9,11 @@ import js from "../img/javascript.png";
 import vscode from "../img/vscode.png";
 import psql from "../img/psql.png";
 
+import { useDispatch } from "react-redux";
+import { useHistory } from "react-router-dom";
+
+import { getUserInfoFromAPI } from "../../actions/user";
+
 import LandMenu from "./LandMenu";
 const Land = () => {
   let logos = [
@@ -19,6 +24,17 @@ const Land = () => {
     [vscode, "VSCode"],
     [psql, "PostgreSQL"],
   ];
+
+  const token = window.sessionStorage.getItem("token");
+  const email = window.sessionStorage.getItem("email");
+
+  const dispatch = useDispatch();
+  const history = useHistory();
+
+  if (token) {
+    dispatch(getUserInfoFromAPI(token, email));
+    history.push("/dashboard");
+  }
 
   return (
     <div className="land-wrapper">
