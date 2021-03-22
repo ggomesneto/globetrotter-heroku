@@ -5,13 +5,14 @@ const { ExpressError, NotFoundError } = require("../ExpressError");
 const { BCRYPT_WORK_FACTOR } = require("../config");
 
 class User {
-  constructor({ name, email, bio, living, img, password }) {
+  constructor({ name, email, bio, living, img, password, id }) {
     this.name = name;
     this.email = email;
     this.bio = bio;
     this.living = living;
     this.img = img;
     this.password = password;
+    this.id = id;
   }
 
   static async all() {

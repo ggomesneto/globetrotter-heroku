@@ -22,6 +22,7 @@ const Profile = () => {
   const history = useHistory();
 
   const user = useSelector((state) => state.user.user);
+  console.log(user);
 
   if (!user) {
     history.push("/login");
