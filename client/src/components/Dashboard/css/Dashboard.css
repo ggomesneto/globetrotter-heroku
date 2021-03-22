@@ -1,0 +1,10 @@
+.dashboard-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(236, 234, 234, 0.829);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  padding-bottom: 3rem;
+}

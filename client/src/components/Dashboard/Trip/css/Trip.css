@@ -1,0 +1,89 @@
+.trip-wrapper {
+  width: 60%;
+  border-radius: 15px;
+  margin: 1rem;
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+
+  font-family: "Rubik", sans-serif;
+  flex-wrap: wrap;
+}
+
+.trip-line div {
+  cursor: pointer;
+}
+
+.trip-line {
+  width: 100%;
+  border-radius: 15px;
+  background-color: #e8e8ec;
+  box-shadow: 10px 30px 41px -14px rgba(0, 0, 0, 0.36);
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trip-more {
+  cursor: pointer;
+  position: relative;
+}
+
+.trip-dropdown {
+  position: absolute;
+
+  padding: 0.5rem;
+  width: 90px;
+  background-color: white;
+}
+
+.trip-dropdown-btn {
+  cursor: pointer;
+}
+
+.trip-add-day {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.trip-city {
+  min-width: 200px;
+  max-width: 200px;
+}
+
+@media screen and (max-width: 860px) {
+  .trip-line {
+    display: block;
+  }
+  .trip-city {
+    padding-bottom: 0.5rem;
+  }
+  .trip-city,
+  .trip-start,
+  .trip-end,
+  .trip-duration,
+  .trip-transport,
+  .trip-more {
+    width: 100%;
+  }
+  .trip-city {
+    max-width: 100%;
+  }
+
+  .trip-start,
+  .trip-end,
+  .trip-duration,
+  .trip-transport {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .trip-wrapper {
+    width: 90%;
+  }
+}

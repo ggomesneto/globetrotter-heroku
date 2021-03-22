@@ -1,0 +1,56 @@
+.addtrip-wrapper {
+  border-radius: 15px;
+  overflow: hidden;
+  width: 60%;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.addtrip-bar-open,
+.addtrip-bar-closed {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(209, 57, 82);
+
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  color: white;
+}
+
+.addtrip-bar-closed {
+  justify-content: center;
+  font-family: "Rubik", sans-serif;
+  cursor: pointer;
+}
+
+.addtrip-bar-open {
+  font-family: "Fredoka One", cursive;
+  justify-content: space-between;
+}
+
+.addtrip-bar-open span {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.addtrip-content {
+  width: 100%;
+  max-width: 100%;
+
+  background-color: white;
+  padding-top: 1rem;
+}
+
+@media screen and (max-width: 860px) {
+  .addtrip-wrapper {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .addtrip-wrapper {
+    width: 90%;
+  }
+}

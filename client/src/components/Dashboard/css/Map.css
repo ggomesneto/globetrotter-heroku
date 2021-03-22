@@ -1,0 +1,78 @@
+.map-container {
+  width: 60%;
+  height: 70vh;
+  position: relative;
+  margin: 1rem;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 10px 30px 41px -14px rgba(0, 0, 0, 0.36);
+
+  z-index: 1;
+}
+
+.map-container {
+  position: relative;
+}
+.map-sub {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  bottom: 0;
+  z-index: 2;
+
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.map-sub-bg {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.6;
+  position: absolute;
+  z-index: 2;
+  border-radius: 15px;
+}
+
+.map-sub-photo {
+  width: 100px;
+  height: 100px;
+  z-index: 3;
+  position: relative;
+  margin-left: 2rem;
+  border-radius: 50%;
+  top: -50%;
+  border: 5px solid lightgrey;
+  overflow: hidden;
+}
+
+.map-sub-photo img {
+  width: 100%;
+  height: 100%;
+}
+
+.map-username {
+  z-index: 3;
+  font-family: "Fredoka One", cursive;
+  color: black;
+  font-size: 1.5rem;
+}
+.marker-date {
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+}
+
+.marker-destination {
+  font-family: "Rubik", sans-serif;
+}
+
+@media screen and (max-width: 860px) {
+  .map-container {
+    width: 90%;
+  }
+}

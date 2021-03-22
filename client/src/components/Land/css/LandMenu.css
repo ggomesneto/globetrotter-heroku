@@ -1,0 +1,25 @@
+.land-menu {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: 1rem;
+  z-index: 20;
+  transition: 0.3s ease all;
+}
+
+.land-menu-link {
+  color: white;
+  margin: 1rem;
+  float: right;
+  cursor: pointer;
+  position: relative;
+  right: 100px;
+}
+.land-menu-link i {
+  margin-right: 0.4rem;
+}
+
+.land-menu-link a {
+  text-decoration: none;
+  color: white;
+}

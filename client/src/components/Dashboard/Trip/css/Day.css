@@ -1,0 +1,43 @@
+.day-wrapper {
+  width: 100%;
+  position: relative;
+  margin-top: 0.5rem;
+}
+
+.day-box {
+  display: flex;
+  justify-content: space-between;
+  background-color: #d8d8dd;
+  box-shadow: 10px 30px 41px -14px rgba(0, 0, 0, 0.36);
+  padding: 1rem;
+}
+
+.day-btns {
+  display: flex;
+}
+
+.day-btns div {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.day-country,
+.day-city {
+  cursor: pointer;
+}
+
+.day-details {
+  background-color: #d8d8dd;
+  box-shadow: 10px 30px 41px -14px rgba(0, 0, 0, 0.36);
+  padding: 1rem;
+}
+
+.day-details-title {
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.day-details-text {
+  font-size: 0.9rem;
+}

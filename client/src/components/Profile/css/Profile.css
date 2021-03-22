@@ -1,0 +1,132 @@
+.profile-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../../img/world-2.jpg");
+  background-size: 100% 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.profile-content {
+  width: 60%;
+  min-height: 500px;
+  border-radius: 15px;
+  background-color: #e8e8ec;
+  box-shadow: 10px 30px 41px -14px rgba(0, 0, 0, 0.36);
+  padding: 1rem;
+}
+
+.profile-content-title {
+  margin-bottom: 1rem;
+}
+.profile-title-main {
+  font-size: 2rem;
+  font-family: "Rubik", sans-serif;
+}
+
+.profile-title-sub {
+  font-size: 0.8rem;
+  font-family: "Rubik", sans-serif;
+}
+
+.profile-line {
+  padding: 1rem;
+  padding-left: 3rem;
+  display: flex;
+
+  align-items: center;
+}
+
+.profile-label {
+  font-family: "Rubik", sans-serif;
+  width: 30%;
+  font-size: 1.2rem;
+}
+.profile-label span {
+  color: red;
+}
+
+.profile-input input {
+  border-radius: 15px;
+  padding: 0.5rem;
+  min-width: 400px;
+  font-family: "Rubik", sans-serif;
+  position: relative;
+}
+
+.profile-input input:focus {
+  outline-width: 0;
+  border: 2px solid rgb(209, 57, 82);
+}
+
+.profile-input-textarea textarea {
+  border-radius: 15px;
+  padding: 0.5rem;
+  min-width: 400px;
+  font-family: "Rubik", sans-serif;
+  position: relative;
+
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-width: 2px;
+}
+
+.profile-input-textarea textarea:focus {
+  outline-width: 0;
+  border: 2px solid rgb(209, 57, 82);
+}
+
+.profile-btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-form-button {
+  background-color: rgb(209, 57, 82);
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  color: white;
+  border-radius: 100px;
+  width: 100px;
+  font-family: "Rubik", sans-serif;
+  cursor: pointer;
+}
+
+.profile-error {
+  color: red;
+  font-family: "Rubik", sans-serif;
+
+  text-align: center;
+}
+
+@media screen and (max-width: 860px) {
+  .profile-content {
+    width: 80%;
+  }
+  .profile-input input,
+  .profile-input-textarea textarea {
+    min-width: 0;
+    width: 100%;
+  }
+  .profile-label {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .profile-line {
+    display: block;
+  }
+  .profile-label {
+    margin-bottom: 0.5rem;
+  }
+}
