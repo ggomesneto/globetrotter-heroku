@@ -2,8 +2,7 @@ import axios from "axios";
 
 import { FETCH_USER, PATCH_USER, FAIL_REG, FAIL_LOG } from "../actions/types";
 
-const API_URL =
-  process.env.REACT_APP_API_URL || "http://localhost:5000/api/users";
+const API_URL = process.env.REACT_APP_API_URL || "/api/users";
 
 export function getUserFromAPI(user) {
   const { email, password } = user;
