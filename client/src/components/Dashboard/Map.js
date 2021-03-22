@@ -79,7 +79,7 @@ const Map = ({ trip }) => {
 
   return (
     <div className="map-container">
-      <MapContainer scrollWheelZoom={false}>
+      <MapContainer scrollWheelZoom={true}>
         <MapConsumer>
           {(map) => {
             map.setView(values.center, values.zoom);

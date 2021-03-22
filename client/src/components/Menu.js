@@ -12,7 +12,11 @@ const Menu = () => {
   return (
     <div className="menu-wrapper">
       <div className="menu-content">
-        <div className="menu-logo">Globetrotter</div>
+        <div className="menu-logo">
+          <NavLink exact to="/dashboard">
+            Globetrotter
+          </NavLink>
+        </div>
         {user ? (
           <div className="menu-logo-left">
             <div className="menu-logo-left-link">

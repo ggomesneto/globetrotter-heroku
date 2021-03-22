@@ -36,6 +36,11 @@
   color: black;
 }
 
+.menu-logo a {
+  text-decoration: none;
+  color: black;
+}
+
 @media screen and (max-width: 550px) {
   .menu-logo {
     font-size: 1.5rem;
