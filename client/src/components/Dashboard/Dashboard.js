@@ -12,6 +12,7 @@ import { getUserInfoFromAPI } from "../../actions/user";
 import { useSelector, useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 import "./css/Dashboard.css";
+import e from "cors";
 
 const { v4: uuidv4 } = require("uuid");
 
@@ -24,6 +25,8 @@ const Dashboard = () => {
   useEffect(() => {
     if (token) {
       dispatch(getUserInfoFromAPI(token, email));
+    } else {
+      history.push("/login");
     }
   }, []);
 
@@ -40,7 +43,6 @@ const Dashboard = () => {
   }, [user]);
 
   if (!user) {
-    history.push("/login");
     return <div className="redirect">Redirecting</div>;
   }
 

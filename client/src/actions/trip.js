@@ -2,6 +2,7 @@ import axios from "axios";
 
 import { ADD_TRIP, FETCH_TRIPS, PATCH_TRIP, DEL_TRIP } from "../actions/types";
 
+// http://localhost:5000
 const API_URL = process.env.REACT_APP_API_URL || "/api/trips";
 
 export function addTripToAPI(trip) {
