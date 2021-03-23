@@ -1,6 +1,6 @@
 Capstone 2 Project
 Globetrotter – Share your trips with the world
-
+![Main Page](https://github.com/ggomesneto/globetrotter-heroku/blob/main/readme-pictures/Land.png)
 This project is my second capstone for the software engineering program on Springboard. The idea is to create a website in which the user can plan trips and share the itinerary with other people.
 
 The project will consist of:
