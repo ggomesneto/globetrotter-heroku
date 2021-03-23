@@ -6,13 +6,12 @@ This project is my second capstone for the software engineering program on Sprin
 The project will consist of:
 
 1 external API:
+  - MapQuest API for Geo location.
 
-- MapQuest API for Geo location.
+1 map external library:
+  - React Leaflet
 
-1 map external library
-
-- React Leaflet
-- NodeJS/Express backend, using a PSQL database.
+ NodeJS/Express backend, using a PSQL database.
   Frontend using React and Redux.
 
 The user flow consists of:
