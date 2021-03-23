@@ -1,3 +1,28 @@
+Capstone 2 Project
+Globetrotter – Share your trips with the world
+
+This project is my second capstone for the software engineering program on Springboard. The idea is to create a website in which the user can plan trips and share the itinerary with other people.
+
+The project will consist of:
+
+1 external API:
+
+- MapQuest API for Geo location.
+
+1 map external library
+
+- React Leaflet
+- NodeJS/Express backend, using a PSQL database.
+  Frontend using React and Redux.
+
+The user flow consists of:
+
+- Creating an account
+- Updating the profile
+- Creating a trip
+- Adding places on the trip
+- Sharing the trip map with friends
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
