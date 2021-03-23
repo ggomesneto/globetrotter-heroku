@@ -18,10 +18,15 @@ The project will consist of:
 The user flow consists of:
 
 - Creating an account
+![Signin](https://github.com/ggomesneto/globetrotter-heroku/blob/main/readme-pictures/Signin.png)
 - Updating the profile
+![Profile](https://github.com/ggomesneto/globetrotter-heroku/blob/main/readme-pictures/Profile.png)
 - Creating a trip
+![Trip](https://github.com/ggomesneto/globetrotter-heroku/blob/main/readme-pictures/Trip.png)
 - Adding places on the trip
+![Places](https://github.com/ggomesneto/globetrotter-heroku/blob/main/readme-pictures/Places.png)
 - Sharing the trip map with friends
+- ![Places](https://github.com/ggomesneto/globetrotter-heroku/blob/main/readme-pictures/map.png)
 
 # Getting Started with Create React App
 
