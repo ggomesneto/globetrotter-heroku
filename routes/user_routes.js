@@ -82,7 +82,7 @@ router.patch("/:id", async function (req, res, next) {
   }
 });
 
-router.get("/:email", ensureLoggedIn, async function (req, res, next) {
+router.get("/:email", async function (req, res, next) {
   try {
     let email = req.params.email;
 

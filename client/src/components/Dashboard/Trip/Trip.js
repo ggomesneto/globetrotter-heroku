@@ -8,6 +8,7 @@ import "./css/Trip.css";
 import AddPlace from "./AddPlace";
 import DayList from "./DayList";
 import EditTrip from "./EditTrip";
+import { NavLink } from "react-router-dom";
 
 const Trip = ({ data, handleSelected, clearMap }) => {
   const [showMore, setShowMore] = useState(false);
@@ -88,6 +89,11 @@ const Trip = ({ data, handleSelected, clearMap }) => {
             <EditTrip data={data} />
             <div className="trip-dropdown-btn" onClick={handleDelete}>
               Delete
+            </div>
+            <div className="trip-dropdown-btn">
+              <NavLink exact to={`/trip/${data.id}`}>
+                Share trip
+              </NavLink>
             </div>
           </div>
         </div>

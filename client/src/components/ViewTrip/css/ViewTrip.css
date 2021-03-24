@@ -1,0 +1,74 @@
+.viewtrip-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(236, 234, 234, 0.829);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  padding-bottom: 3rem;
+}
+
+.viewtrip-trip {
+  width: 100%;
+}
+
+.viewtrip-days {
+  width: 60%;
+}
+
+.viewtrip-days-label {
+  font-size: 1.5rem;
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.viewtrip-day {
+  display: flex;
+  justify-content: space-between;
+  background-color: #d8d8dd;
+  box-shadow: 10px 30px 41px -14px rgba(0, 0, 0, 0.36);
+  padding: 1rem;
+  font-family: "Rubik", sans-serif;
+}
+
+.viewtrip-day-details {
+  display: flex;
+  justify-content: space-between;
+  background-color: #d8d8dd;
+  box-shadow: 10px 30px 41px -14px rgba(0, 0, 0, 0.36);
+  padding: 1rem;
+}
+
+.viewtrip-trip {
+  width: 60%;
+  border-radius: 15px;
+  margin: 1rem;
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Rubik", sans-serif;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  background-color: #e8e8ec;
+  box-shadow: 10px 30px 41px -14px rgba(0, 0, 0, 0.36);
+}
+
+@media screen and (max-width: 860px) {
+  .viewtrip-trip {
+    display: block;
+    width: 90%;
+  }
+  .viewtrip-trip-destination {
+    padding-bottom: 0.5rem;
+  }
+  .viewtrip-days {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .viewtrip-trip {
+  }
+}

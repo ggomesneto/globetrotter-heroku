@@ -6,6 +6,7 @@ import Land from "./Land/Land";
 import Dashboard from "./Dashboard/Dashboard";
 import Profile from "./Profile/Profile";
 import Login from "./Login/Login";
+import ViewTrip from "./ViewTrip/ViewTrip";
 
 const Routes = () => {
   return (
@@ -21,6 +22,9 @@ const Routes = () => {
       </Route>
       <Route exact path="/login">
         <Login />
+      </Route>
+      <Route exact path="/trip/:id">
+        <ViewTrip />
       </Route>
     </Switch>
   );

@@ -30,7 +30,15 @@ const Menu = () => {
               </NavLink>
             </div>
           </div>
-        ) : null}
+        ) : (
+          <div className="menu-logo-left">
+            <div className="menu-logo-left-link">
+              <NavLink exact to="/login">
+                Sign in
+              </NavLink>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
