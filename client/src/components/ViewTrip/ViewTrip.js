@@ -54,6 +54,7 @@ const ViewTrip = () => {
     return <div className="loading">Loading</div>;
   }
 
+  console.log(tripData);
   const days = tripData.days;
 
   return (
