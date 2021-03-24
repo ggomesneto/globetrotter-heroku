@@ -55,7 +55,7 @@ const ViewTrip = () => {
   }
 
   const days = tripData.days;
-  console.log(tripData);
+
   return (
     <div className="viewtrip-wrapper">
       <Menu />

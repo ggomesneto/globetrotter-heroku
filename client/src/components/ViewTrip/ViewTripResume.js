@@ -4,7 +4,7 @@ import axios from "axios";
 import "../Dashboard/css/Resume.css";
 
 const ViewTripResume = ({ user }) => {
-  const API_URL = process.env.REACT_APP_API_URL || "/api/trips";
+  const API_URL = process.env.REACT_APP_API_URL || "/api/trips/user";
   const { living, bio } = user;
 
   let [trips, setTrips] = useState([]);

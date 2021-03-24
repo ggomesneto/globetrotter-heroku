@@ -18,8 +18,6 @@ const LandMenu = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, [scrollTop]);
 
-  console.log(scrollTop);
-
   return (
     <div
       style={
