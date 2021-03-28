@@ -22,7 +22,7 @@ const Land = () => {
     [node, "NodeJS"],
     [js, "JavaScript"],
     [vscode, "VSCode"],
-    [psql, "PostgreSQL"],
+    [psql, "PostgreSQL"]
   ];
 
   const token = window.sessionStorage.getItem("token");
@@ -79,7 +79,16 @@ const Land = () => {
             <div className="land-footer-right-sign">- Geraldo Gomes</div>
             <br />
             <br />
-            Github | Linkedin
+            <a
+              href="https://github.com/ggomesneto/globetrotter-heroku"
+              target="blank"
+            >
+              Github
+            </a>
+            |
+            <a href="http://linkedin.com/in/ggomesneto" target="blank">
+              Linkedin
+            </a>
           </div>
         </div>
       </div>
