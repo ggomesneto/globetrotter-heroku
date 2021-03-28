@@ -79,6 +79,11 @@
   float: right;
 }
 
+.land-footer-right-text a {
+  color: white;
+  margin: 0.5rem;
+}
+
 .land-title {
   color: white;
   display: inline-block;
