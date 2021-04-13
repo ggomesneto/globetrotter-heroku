@@ -12,7 +12,6 @@ import { getUserInfoFromAPI } from "../../actions/user";
 import { useSelector, useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 import "./css/Dashboard.css";
-import e from "cors";
 
 const { v4: uuidv4 } = require("uuid");
 

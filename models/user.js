@@ -77,17 +77,6 @@ class User {
     );
     const user = result.rows[0];
 
-    // const getFav = await db.query(
-    //   `
-    // SELECT tripId FROM favorited WHERE username=$1
-    // `,
-    //   [username]
-    // );
-
-    // const favorited = getFav.rows;
-
-    // user.favorited = favorited;
-
     if (user) {
       if ((await bcryptjs.compare(password, user.password)) === true) {
         return { isUser: true, ...user };
@@ -100,15 +89,12 @@ class User {
   }
 
   static async save(name, bio, living, img, id) {
-    console.log(name, bio, living, img, id);
     const res = await db.query(
       `
         UPDATE users SET name=$1, bio=$2, living=$3, img=$4 WHERE id=$5 RETURNING id, name, bio, living, email, password, img ;
         `,
       [name, bio, living, img, id]
     );
-
-    console.log(res.rows[0]);
 
     if (!res.rows) {
       throw new ExpressError("Cannot update user", 400);

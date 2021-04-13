@@ -15,6 +15,9 @@ import { useHistory } from "react-router-dom";
 import { getUserInfoFromAPI } from "../../actions/user";
 
 import LandMenu from "./LandMenu";
+
+const { v4: uuidv4 } = require("uuid");
+
 const Land = () => {
   let logos = [
     [react, "React"],
@@ -50,18 +53,18 @@ const Land = () => {
         <div className="land-footer-bg"></div>
         <div className="land-footer-left">
           <div className="land-footer-left-title">
-            <i class="fas fa-edit"></i>Plan your trips
+            <i className="fas fa-edit"></i>Plan your trips
           </div>
           <div className="land-footer-left-link">
-            <i class="fas fa-share-alt"></i>Share them with your friends
+            <i className="fas fa-share-alt"></i>Share them with your friends
           </div>
           <div className="land-footer-left-link">
-            <i class="fas fa-plane"></i>Start Traveling
+            <i className="fas fa-plane"></i>Start Traveling
           </div>
         </div>
         <div className="land-footer-center">
           {logos.map((logo) => (
-            <div className="land-footer-center-logos">
+            <div key={uuidv4()} className="land-footer-center-logos">
               <img alt="" src={logo[0]} />
               <div className="land-footer-center-text">{logo[1]}</div>
             </div>

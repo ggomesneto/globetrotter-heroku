@@ -1,0 +1,200 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div
+      class="land-wrapper"
+    >
+      <div
+        class="land-menu"
+      >
+        <div
+          class="land-menu-link"
+        >
+          <i
+            class="fas fa-suitcase"
+          />
+          Globetrotter
+        </div>
+        <div
+          class="land-menu-link"
+        >
+          <a
+            href="/login"
+          >
+            Sign In
+          </a>
+        </div>
+      </div>
+      <div
+        class="land-content"
+      >
+        <div
+          class="land-logo"
+        >
+          GLOBETROTTER
+        </div>
+        <div
+          class="land-title"
+        >
+          Create your own 
+          <br />
+          beautiful travel map
+        </div>
+      </div>
+      <div
+        class="land-footer"
+      >
+        <div
+          class="land-footer-bg"
+        />
+        <div
+          class="land-footer-left"
+        >
+          <div
+            class="land-footer-left-title"
+          >
+            <i
+              class="fas fa-edit"
+            />
+            Plan your trips
+          </div>
+          <div
+            class="land-footer-left-link"
+          >
+            <i
+              class="fas fa-share-alt"
+            />
+            Share them with your friends
+          </div>
+          <div
+            class="land-footer-left-link"
+          >
+            <i
+              class="fas fa-plane"
+            />
+            Start Traveling
+          </div>
+        </div>
+        <div
+          class="land-footer-center"
+        >
+          <div
+            class="land-footer-center-logos"
+          >
+            <img
+              alt=""
+              src="react.png"
+            />
+            <div
+              class="land-footer-center-text"
+            >
+              React
+            </div>
+          </div>
+          <div
+            class="land-footer-center-logos"
+          >
+            <img
+              alt=""
+              src="git.png"
+            />
+            <div
+              class="land-footer-center-text"
+            >
+              Git
+            </div>
+          </div>
+          <div
+            class="land-footer-center-logos"
+          >
+            <img
+              alt=""
+              src="nodejs.png"
+            />
+            <div
+              class="land-footer-center-text"
+            >
+              NodeJS
+            </div>
+          </div>
+          <div
+            class="land-footer-center-logos"
+          >
+            <img
+              alt=""
+              src="javascript.png"
+            />
+            <div
+              class="land-footer-center-text"
+            >
+              JavaScript
+            </div>
+          </div>
+          <div
+            class="land-footer-center-logos"
+          >
+            <img
+              alt=""
+              src="vscode.png"
+            />
+            <div
+              class="land-footer-center-text"
+            >
+              VSCode
+            </div>
+          </div>
+          <div
+            class="land-footer-center-logos"
+          >
+            <img
+              alt=""
+              src="psql.png"
+            />
+            <div
+              class="land-footer-center-text"
+            >
+              PostgreSQL
+            </div>
+          </div>
+        </div>
+        <div
+          class="land-footer-right"
+        >
+          <div
+            class="land-footer-right-text"
+          >
+            <i>
+              Globetrotter is my final Capstone for the Springboard's Software Engineering BootCamp. The FrontEnd is made with React and ReduxJS while the BackEnd is made all in ExpressJS using PostreSQL as database.
+            </i>
+            <br />
+            <div
+              class="land-footer-right-sign"
+            >
+              - Geraldo Gomes
+            </div>
+            <br />
+            <br />
+            <a
+              href="https://github.com/ggomesneto/globetrotter-heroku"
+              target="blank"
+            >
+              Github
+            </a>
+            |
+            <a
+              href="http://linkedin.com/in/ggomesneto"
+              target="blank"
+            >
+              Linkedin
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

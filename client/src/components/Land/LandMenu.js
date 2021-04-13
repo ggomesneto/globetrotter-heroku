@@ -31,7 +31,7 @@ const LandMenu = () => {
         style={scrollTop > 0 ? { color: "rgb(241, 97, 44)" } : null}
         className="land-menu-link"
       >
-        <i class="fas fa-suitcase"></i>Globetrotter
+        <i className="fas fa-suitcase"></i>Globetrotter
       </div>
       <div
         style={scrollTop > 0 ? { color: "rgb(241, 97, 44)" } : null}
