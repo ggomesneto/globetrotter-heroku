@@ -16,11 +16,13 @@ const ViewTripResume = ({ user }) => {
   }
   useEffect(() => {
     const getTrips = async () => {
-      const res = await axios.get(`${API_URL}/${user.email}`);
-      setTrips(res.data);
+      if (user.email) {
+        const res = await axios.get(`${API_URL}/${user.email}`);
+        setTrips(res.data);
+      }
     };
     getTrips();
-  }, []);
+  }, [user]);
 
   return (
     <div className="resume-wrapper">
