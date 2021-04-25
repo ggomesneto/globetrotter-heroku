@@ -3,10 +3,8 @@
 const {
   NotFoundError,
   BadRequestError,
-  UnauthorizedError
+  UnauthorizedError,
 } = require("../expressError");
-
-const db = require("../db.js");
 
 const User = require("./user.js");
 const {
@@ -14,7 +12,7 @@ const {
   commonBeforeEach,
   commonAfterEach,
   commonAfterAll,
-  userId
+  userId,
 } = require("./_testCommon");
 
 beforeAll(commonBeforeAll);
@@ -35,7 +33,7 @@ describe("authenticate", function () {
       img: "U1L",
       living: "U1L",
       name: "u1",
-      password: userId[1]
+      password: userId[1],
     });
   });
 
@@ -43,7 +41,7 @@ describe("authenticate", function () {
     const user = await User.authenticate("nope", "password");
 
     expect(user).toEqual({
-      isUser: false
+      isUser: false,
     });
   });
 
@@ -51,7 +49,7 @@ describe("authenticate", function () {
     const user = await User.authenticate("nope", "password");
 
     expect(user).toEqual({
-      isUser: false
+      isUser: false,
     });
   });
 });
@@ -77,7 +75,7 @@ describe("add", function () {
       img,
       password: hashedPass,
       id: userId,
-      isRegistered: true
+      isRegistered: true,
     });
   });
 
@@ -93,7 +91,7 @@ describe("add", function () {
     const user = await User.add(name, password, email, bio, living, img);
 
     expect(user).toEqual({
-      isRegistered: false
+      isRegistered: false,
     });
   });
 });
@@ -108,7 +106,7 @@ describe("get", function () {
       img: "U1L",
       living: "U1L",
       name: "u1",
-      password: userId[1]
+      password: userId[1],
     });
   });
   test("not found if no such user", async function () {
@@ -138,7 +136,7 @@ describe("update", function () {
       img: "newImg",
       id: userId[0],
       email: "u1@email.com",
-      password: userId[1]
+      password: userId[1],
     });
   });
 });

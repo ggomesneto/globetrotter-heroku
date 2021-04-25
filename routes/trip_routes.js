@@ -81,7 +81,7 @@ router.post("/", ensureLoggedIn, async function (req, res, next) {
   }
 });
 
-//EDIT A TRIP - TRYING TO FIND OUT A WAY TO CHECK USERS HERE - FOR NOW THE CHECK IF BEING MADE ON THE FRONTEND
+//EDIT A TRIP - TRYING TO FIND OUT A WAY TO CHECK USERS HERE - FOR NOW THE CHECK IS BEING MADE ON THE FRONTEND
 
 router.patch("/:id", async function (req, res, next) {
   try {
@@ -118,7 +118,7 @@ router.patch("/:id", async function (req, res, next) {
   }
 });
 
-//EDIT A TRIP - TRYING TO FIND OUT A WAY TO CHECK USERS HERE - FOR NOW THE CHECK IF BEING MADE ON THE FRONTEND
+//EDIT A TRIP - TRYING TO FIND OUT A WAY TO CHECK USERS HERE - FOR NOW THE CHECK IS BEING MADE ON THE FRONTEND
 
 router.delete("/:id", ensureLoggedIn, async function (req, res, next) {
   try {

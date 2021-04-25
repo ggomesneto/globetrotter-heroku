@@ -32,6 +32,7 @@ class Trip {
     const result = await db.query(`
         SELECT * FROM trips
         `);
+
     return result.rows;
   }
 
@@ -83,6 +84,7 @@ class Trip {
     );
 
     let trip = new Trip(add.rows[0]);
+
     return trip;
   }
 

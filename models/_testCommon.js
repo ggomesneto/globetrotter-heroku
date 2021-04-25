@@ -5,6 +5,7 @@ const db = require("../db.js");
 const { BCRYPT_WORK_FACTOR } = require("../config");
 
 let userId = [];
+let tripId = [];
 
 async function commonBeforeAll() {
   await db.query("DELETE FROM trips");
@@ -20,6 +21,12 @@ async function commonBeforeAll() {
 
   userId.push(user.rows[0].id);
   userId.push(user.rows[0].password);
+
+  const trip = await db.query(
+    `INSERT INTO trips (coord_destination, coord_leaving, destination, leaving, startdate, stopdate, transportation, creator, duration) VALUES ('123','123','las vegas','austin','04-01','05-01','car','u1@email.com', '5') RETURNING  id, coord_destination, coord_leaving, destination, leaving, startdate, stopdate, transportation, creator, duration`
+  );
+
+  tripId.push(trip.rows[0].id);
 }
 
 async function commonBeforeEach() {
@@ -39,5 +46,6 @@ module.exports = {
   commonBeforeEach,
   commonAfterEach,
   commonAfterAll,
-  userId
+  userId,
+  tripId,
 };
